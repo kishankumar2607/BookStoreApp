@@ -1,0 +1,758 @@
+﻿
+/* General Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation Bar Design Starts */
+.navbar {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 5rem;
+}
+
+.logo-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-main-div a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.nav-links li span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-links li a:hover {
+    color: #ff0000;
+}
+
+.nav-links li span:hover {
+    color: #ff0000;
+}
+
+/* Navigation Bar Design Ends */
+
+/*Home Page Design Starts*/
+
+.hero {
+    background-image: url('../Image/hero-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1.5rem 0rem 1rem;
+}
+
+.button {
+    background-color: #000000;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+}
+
+.featured-books {
+    text-align: center;
+    padding: 4rem 12rem;
+}
+
+.featured-books h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.featured-book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f1f8;
+    padding: 25px 15px;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 64%;
+    transition: all 0.3s ease-in;
+}
+
+.featured-book-card:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.featured-book-card h3 {
+    color: #000000;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.featured-book-card p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+.bestsellers {
+    text-align: center;
+    padding: 4rem 12rem;
+    background-color: #f0f1f8;
+}
+
+.bestsellers h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+
+.bestsellers-book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 25px 15px;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 64%;
+    transition: all 0.3s ease-in;
+}
+
+.bestsellers-book-card:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.bestsellers-book-card h3 {
+    color: #000000 !important;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.bestsellers-book-card p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000 !important;
+}
+
+.about {
+    background-color: #ffffff;
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.about h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+.about p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    max-width: 60%;
+    line-height: 1.5;
+}
+
+.reviews {
+    background-color: #f0f1f8;
+    padding: 4rem 12rem;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 25px 15px;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 64%;
+    transition: all 0.3s ease-in;
+}
+
+.review-card:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.review-card p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+.review-card span {
+    color: #ff0000;
+}
+
+.contact {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 4rem 0rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 0.5rem;
+}
+
+.contact p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+/*Home Page Design Ends*/
+
+
+/*Product Page Design Starts*/
+
+#content-wrapper {
+    padding: 2.5rem 4rem;
+    margin: 1rem 0rem;
+    background: #ffffff;
+}
+
+.lblWelcomMessage {
+    font-size: 26px;
+    padding-left: 4rem;
+}
+
+.product-selection h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.dropdown-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.dropdown-container {
+    width: 350px;
+}
+
+.lblGenre, .lblBook {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.dropdown {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.book-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 2px solid #000000;
+    width: 67%;
+}
+
+.book-card h3 {
+    color: #000000;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.book-card p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+.short-description {
+    font-size: 14px;
+    color: #666;
+    padding-top: 0.5rem;
+}
+
+.long-description {
+    font-size: 14px;
+    color: #444;
+}
+
+#lblUnitPrice{
+    color: #ff0000;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+    gap: 10px;
+}
+
+.quantity-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.lblQuantity {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.quantity-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: #cc0606;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.cart-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/*Product Page Design Ends*/
+
+/*Cart Page Design Starts*/
+
+.cart-container {
+    min-height: 75vh;
+    background-color: #ffffff;
+    margin: 0.5rem 0rem;
+    padding: 3rem 6rem;
+}
+
+.cart-container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.cart-table th {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #f7f7f7;
+    color: #000000;
+}
+
+.cart-table td {
+    font-size: 18px;
+    color: #000000;
+}
+
+.remove-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: 2px solid #ff0000;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease-in;
+}
+
+.remove-btn:hover {
+    background-color: transparent;
+    color: #ff0000;
+}
+
+.cart-summary {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-summary-item {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty-cart h2{
+    padding-bottom: 1.2rem;
+    padding-top: 2rem;
+}
+
+.empty-cart p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 1.5rem;
+}
+
+/*Cart Page Design Ends*/
+
+/*CheckOut Page Design Ends*/
+
+.display-validation-error{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#formCheckout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-container {
+    margin: 1rem 0rem;
+    padding: 3rem 0rem;
+    width: 50%;
+}
+
+.checkout-container-h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.checkout-main-container {
+    padding: 1.2rem 2.5rem 2rem 2.5rem;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+.checkout-section {
+    margin-bottom: 20px;
+}
+
+.checkout-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff0000;
+    padding-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+}
+
+.checkout-summary {
+    margin-bottom: 2.5rem;
+}
+
+.checkout-summary h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    padding: 1rem 0rem;
+}
+
+.totalItems {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.totalPrice {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.lblTotalItems {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+.lblTotalPrice {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+.checkout-buttons {
+    text-align:center;
+    margin-top: 2.5rem;
+}
+
+.optional-label {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px !important;
+}
+
+.checkbox-group, .radio-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-item, .radio-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkbox-item input, .radio-item input {
+    margin-right: 15px;
+}
+
+/*CheckOut Page Design Ends*/
+
+/*Order Confirmation Page Design Starts*/
+
+.confirmation-container-main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 5px 15px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.confirmation-container h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ff0000;
+    padding-bottom: 1.2rem;
+}
+
+.confirmation-container p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 1.5rem;
+}
+
+/*Order Confirmation Page Design Ends*/
+
+
+/*Login Page Design Starts*/
+
+.login-div {
+    width: 50%;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+/*Login Page Design Ends*/
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
