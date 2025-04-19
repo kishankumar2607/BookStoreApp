@@ -2,7 +2,7 @@
 
 This repository contains an ASP.NET Web Forms-based BookStore website created as a college assignment. It includes product browsing by genre, session-based cart functionality, user login/logout, and friendly navigation with a responsive UI.
 
-> 🎓 Developed by **Kishan Kumar Das** for Web Development coursework at **Conestoga College**.
+> 🎓 Developed by **Kishan Kumar Das**
 
 ---
 
@@ -170,7 +170,7 @@ INSERT INTO Books VALUES
 
 ## 📬 Contact
 
-- 📧 Email: [kishan2607@gmail.com](mailto:kishan2607@gmail.com)  
+- 📧 Email: [kishank2607@gmail.com](mailto:kishank2607@gmail.com)  
 - 🌐 LinkedIn: [linkedin.com/in/kishankumardas](https://www.linkedin.com/in/kishan-kumar-das/)
 
 ---
